@@ -2,7 +2,14 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-    
+    props: {
+        changeTheme: String
+    },
+    methods: {
+        returnTheme() {
+            this.$emit('changeTheme');
+        }
+    }
 })
 </script>
 
@@ -18,7 +25,7 @@ export default defineComponent({
                 isSearch />
         </div>
         <div class="header__user">
-
+            <button @click="returnTheme">changeTheme</button>
         </div>
     </header>
 </template>
