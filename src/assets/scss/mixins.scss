@@ -1,0 +1,22 @@
+/* Medias */
+@mixin phone {
+    @media (max-width: 475px) { @content; } 
+} 
+
+@mixin mobile {
+    @media (max-width: 992px) { @content; }
+}
+
+@mixin desktop {
+    @media (min-width: 992px) { @content; }
+}
+
+/* Grid */
+@mixin container {
+    max-width: 87%;
+    margin: auto;
+
+    @media (max-width: 475px) {
+        max-width: 94%;
+    }
+}
