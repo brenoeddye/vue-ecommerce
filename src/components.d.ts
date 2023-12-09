@@ -12,5 +12,6 @@ declare module '@vue/runtime-core' {
     LayoutHeader: typeof import('./components/layout/Header.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    WidgetBannerFull: typeof import('./components/widget/BannerFull.vue')['default']
   }
 }

@@ -22,6 +22,7 @@ const SASS_AUTO_IMPORT = `@use "sass:color";
 @import "${SASS_PATH}/functions";
 @import "${SASS_PATH}/theme";
 @import "${SASS_PATH}/typography";
+@import "${SASS_PATH}/reset";
 @import "${SASS_PATH}/mixins";`;
 
 // https://vitejs.dev/config/
